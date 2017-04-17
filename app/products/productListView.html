@@ -1,0 +1,44 @@
+<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 product-container">
+				<div class="page-header text-center"><h1>Product</h1></div>
+				<div class="">
+					<div class="product-list" ng-controller="ProductListCtrl">
+					<div class="row">
+						<div class="col-md-12 text-center"><button class="btn btn-primary btn-lg" type="button" ng-click=toggleImg()>{{showImg?'hide':'show'}} image</button></div>
+					</div>
+					
+						<div class="product " ng-repeat="product in products">
+							<div ng-if="showImg" class="image-container pull-left">
+
+								<img  ng-src="{{product.productUrl}}">
+								<p class="price"></p>
+							</div>
+							<div class="prduct-list-container">
+							<h2 class="text-blue"><a ui-sref="productDetail({productId: product.productID})">{{product.productName}} </a></h2>
+								<p>
+									<span class="label label-success">Product id : {{product.productID}}</span> 
+									<span class="label label-warning">Rating : {{product.productRating}} <i class="fa fa-star" aria-hidden="true"></i></span> 
+									<span class="label label-info">Price is :{{product.price | currency}}</span>
+								</p>
+								<div>
+								<h4><span class="label label-primary">Features</span></h4>
+								<ul class="pull-left">
+								<li ng-repeat="x in product.feature">{{x}}</li>
+									
+								</ul>
+								</div>
+								
+									
+								
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>

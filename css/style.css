@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+/*============================== Genraic class============================== */
+.overflow-hide{
+	overflow: hidden;
+}
+.text-blue{
+	color: rgb(92, 130, 169);
+}
+.text-lgrey{
+	color: #eaeaea;
+}
+.bg-cornflowerblue{
+	background: #337ab7;
+}
+/*====================== product style ===========================*/
+
+.product{
+	display: inline-block;
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    background: #f7f7f7;
+    //box-shadow: 2px 2px 0px rgba(204, 204, 204, 0.36);
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #eaeaea;
+}
+.product .image-container{
+	margin: 0px 10px 0px 0px;
+}
+.price{
+	position: absolute;
+   
+    width: 100%;
+    bottom: -10px;
+    padding: 10px;
+    text-align: center;
+}

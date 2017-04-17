@@ -1,0 +1,34 @@
+<div class="col-md-8 col-md-offset-2">
+	<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3>Title : {{productEdit.productName}}</h3>
+	</div>
+	<div class="panel-body">
+		<div  class="image-container pull-left">
+			<img  ng-src="{{productEdit.productUrl}}">
+				<p class="price"></p>
+		</div>
+		<div class="pull-left">
+			<h2 class="text-blue">{{productEdit.productName}}</h2>
+			<p>
+				<span class="label label-success">Product id : {{productEdit.productID}}</span> 
+				<span class="label label-warning">Rating : {{productEdit.productRating}} <i class="fa fa-star" aria-hidden="true"></i></span> 
+				<span class="label label-info">Price is :{{productEdit.price | currency}}</span>
+			</p>
+		<div>
+		<h4><span class="label label-primary">Features</span></h4>
+		<ul class="pull-left">
+			<li ng-repeat="x in productEdit.feature track by $index">{{x}}</li>
+		</ul>
+		</div>
+		
+	</div>
+</div>
+<div class="panel-footer">
+	
+	<a class="btn btn-default" ui-sref="productList"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+ Back</a>
+	<a class="btn btn-primary pull-right" ui-sref="productEdit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+Edit</a>
+</div>
+</div>

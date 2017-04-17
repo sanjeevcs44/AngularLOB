@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- angular js depency file -->
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-resource.min.js"></script>
+<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+<!-- include main app file  -->
+<script type="text/javascript" src="app/app.js"></script>
+
+
+<!-- custom services -->
+<script type="text/javascript" src="common/common.services.js"></script>
+<script type="text/javascript" src="common/productResource.js"></script>
+
+<!-- List of custom controller -->
+<script type="text/javascript" src="app/products/productListCtrl.js"></script>
+<script type="text/javascript" src="app/products/productDetailCtrl.js"></script>
+<script type="text/javascript" src="app/products/productEditCtrl.js"></script>
+
+<!--css Stylea -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>acme project</title></head>
+<!-- Main Application started -->
+<body ng-app="myApp">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">MobileProductList</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="productList"><i class="fa fa-list" aria-hidden="true"></i> Product List</a></li>
+        <li><a ui-sref="productEdit{{productId}}"><i class="fa fa-plus-square" aria-hidden="true"></i> Add New Product</a></li>
+          
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+
+		<div data-ui-view></div>
+
+</div>
+
+
+</body>
+</html>
+

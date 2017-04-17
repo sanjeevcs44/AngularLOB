@@ -1,0 +1,59 @@
+[
+			{
+				"productID" : 1,
+				"productName" : "Mi 3 (Metallic Grey, 16 GB)",
+				"productRating" : 4.3,
+				"productUrl":"images/mi-mi3-original.jpeg",
+				"feature" : [
+					"2 GB RAM | 16 GB ROM |",
+					"5 inch Full HD Display",
+					"13MP Primary Camera | 2MP Front",
+					"3050 mAh Li-Ion Battery",
+					"Qualcomm Snapdragon 800 8274AB Processor"
+					],
+				"specification" : 
+					{
+						"FM Radio" : "Yes",
+						"Audio Formats" : "MP3"
+					},
+				"price" : 200
+			},
+			{
+				"productID" : 2,
+				"productName" : "Mi 5 (White, 32 GB)  (3 GB RAM)",
+				"productRating" : 4.0,
+				"productUrl":"images/mi-5-original.jpeg",
+				"feature" : [
+					"3 GB RAM | 32 GB ROM |",
+					"5.15 inch Full HD Display",
+					"16MP Primary Camera | 4MP Front",
+					"3000 mAh Li-Ion Polymer Battery",
+					"Snapdragon 820 Kryo Processor"
+					],
+				"specification" : 
+					{
+						"FM Radio" : "Yes",
+						"Audio Formats" : "MP3"
+					},
+				"price" : 280
+			},
+			{
+				"productID" : 3,
+				"productName" : "Redmi 3S Prime (Gold, 32 GB)  (3 GB RAM)",
+				"productRating" : 4.1,
+				"productUrl":"images/mi-redmi-3s-prime-na-original.jpeg",
+				"feature" : [
+					"3 GB RAM | 32 GB ROM | Expandable Upto 128 GB",
+					"5 inch HD Display",
+					"13MP Primary Camera | 5MP Front",
+					"4100 mAh Li-Ion Polymer Battery",
+					"Qualcomm Snapdragon 430 64-bit Processor"
+					],
+				"specification" : 
+					{
+						"FM Radio" : "Yes",
+						"Audio Formats" : "MP3"
+					},
+				"price" : 300
+			}
+		]
